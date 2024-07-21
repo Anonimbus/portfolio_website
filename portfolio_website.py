@@ -261,21 +261,24 @@ elif current_page == "Home":
             st.image("images/WILDLIFE PHOTOGRAPHY TIP #3.png")
 
 
-def display_project(title, description, image_url, link):
-    st.subheader(title)
-    st.write(description)
-    if image_url:
-        st.image(image_url, use_column_width=True)
-    if link:
-        st.markdown(f"[View Project]({link})", unsafe_allow_html=True)
-    st.write("---")
-    
 
 
 
     
 
-if st.session_state["current_page"] == "Projects":
+
+elif current_page == "Projects":
+        
+    def display_project(title, description, image_url, link):
+        st.subheader(title)
+        st.write(description)
+        if image_url:
+            st.image(image_url, use_column_width=True)
+        if link:
+            st.markdown(f"[View Project]({link})", unsafe_allow_html=True)
+        st.write("---")
+    
+
     st.title("Projects")
     st.write("Here are some of my notable projects:")
 
