@@ -231,101 +231,6 @@ if current_page == "Home":
 
 
 
-
-elif current_page == "Designs":
-
-    st.title("DESIGNS")
-    st.markdown("<h5 style='text-align: center;'>Made using Inkscape, Canva, Photopea & Remove.bg</h3>", unsafe_allow_html=True)
-    st.image("images/Title.png")
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.image("images/Black&WhiteLogo.png")
-        st.image("images/Ultimate Dining Room.png")
-            
-    with col2:
-        st.image("images/Canva 100 Design Milestone Badge.png")
-        st.image("images/Hamro Auction.png")
-        st.image("images/newliontype.png")
-    
-    with col3:
-        st.image("images/Downtown Tech.png")
-        st.image("images/WILDLIFE PHOTOGRAPHY TIP #3.png")
-           
-    col1, col2 = st.columns(2)
-    with col1:
-        st.image("images/QATAR.png")
-        st.title("  ")
-        st.image("images/DVisionLogo.png")
-            
-    with col2:
-        st.image("images/Graphic Design.png")
-        st.image("images/Congratulation.png")
-
-    st.image("images/Spoopderman.png")
-
-
-
-
-
-
-    
-
-
-elif current_page == "Projects":
-        
-    def display_project(title, description, image_url, link):
-        st.subheader(title)
-        st.write(description)
-        if image_url:
-            st.image(image_url, use_column_width=True)
-        if link:
-            st.markdown(f"[View Project]({link})", unsafe_allow_html=True)
-        st.write("---")
-    
-
-    st.title("Projects")
-    st.write("Here are some of my notable projects:")
-
-    display_project(
-        title="DownTown Tech",
-        description="Made using Wix in a bootcamp organized by Deerwalk Sifal School, this is an e-Commerce website made to buy and sell goods (mainly tech related).",
-        image_url="images/eCommerce.png",  
-        link="https://sigdelswaroop.wixsite.com/my-site" 
-    )
-
-    display_project(
-        title="Minds Create",
-        description="Made using Wordpress. This website, 'Minds Create' is made as to make an online bidding and painting showcase/selling website.",
-        image_url="images/painting.png",  
-        link="https://sigdelswaroop.wordpress.com/" 
-    )
-
-    display_project(
-        title="Ed-Sheeran Website",
-        description="Made using Wix as my final assignment for the above mentioned bootcamp, this is my personal favourite website for Ed Sheeran songs, which provides smooth sailing and instant loading of songs.",
-        image_url="images/sheeran.png", 
-        link="https://sigdelswaroop.wixsite.com/ed-sheeran" 
-    )
-
-    display_project(
-        title="Image Search App",
-        description="Made using html, css, and js as my first introduction to API keys this is also one of my favourites. It uses unsplash api-key to search for images in unsplash and return the image to my website. I created it 2 years prior so i have pushed it in github but it's not made public as i didn't have the knowledge of environment variables. ( will try to make it public soon!!!)",
-        image_url="images/search.png", 
-        link="https://github.com/Anonimbus" 
-    )
-    
-    display_project(
-        title="Typing Tutor",
-        description="Are your hands itching to type faster? There's no better place to start your journey to type faster than 'Typing Tutor'. Created with pure C language and in executing in console. A fun journey awaits, where you can experience different game modes: --'Typing practise with short sentences' gives you tongue twisters that will twist even your fingers. --'Typing Drill' helps you conquer your fear of keyboard by giving you the words you find difficult.  --At last 'Typing Game' is made as fun game where you have to type the falling word before it hits the ground panel [ but was unable to complete due to the limitations in the terminal window or my skills! (; ]",
-        image_url="images/c1.png",  
-        # image_url="images/c2.png",
-        link="https://github.com/Anonimbus/Typing-Tutor" 
-    )
-
-
-
-
-
 elif current_page == "About":
     # st.markdown("<h5 style='text-align: center;'>Hello this is custom css and html</h3>", unsafe_allow_html=True)
     
@@ -579,6 +484,105 @@ elif current_page == "ChatBot":
         
         # Rerun the script to update the conversation display
         st.experimental_rerun()
+
+
+
+
+
+
+
+
+    
+
+
+elif current_page == "Projects":
+        
+    def display_project(title, description, image_url, link):
+        st.subheader(title)
+        st.write(description)
+        if image_url:
+            st.image(image_url, use_column_width=True)
+        if link:
+            st.markdown(f"[View Project]({link})", unsafe_allow_html=True)
+        st.write("---")
+    
+
+    st.title("Projects")
+    st.write("Here are some of my notable projects:")
+
+    display_project(
+        title="DownTown Tech",
+        description="Made using Wix in a bootcamp organized by Deerwalk Sifal School, this is an e-Commerce website made to buy and sell goods (mainly tech related).",
+        image_url="images/eCommerce.png",  
+        link="https://sigdelswaroop.wixsite.com/my-site" 
+    )
+
+    display_project(
+        title="Minds Create",
+        description="Made using Wordpress. This website, 'Minds Create' is made as to make an online bidding and painting showcase/selling website.",
+        image_url="images/painting.png",  
+        link="https://sigdelswaroop.wordpress.com/" 
+    )
+
+    display_project(
+        title="Ed-Sheeran Website",
+        description="Made using Wix as my final assignment for the above mentioned bootcamp, this is my personal favourite website for Ed Sheeran songs, which provides smooth sailing and instant loading of songs.",
+        image_url="images/sheeran.png", 
+        link="https://sigdelswaroop.wixsite.com/ed-sheeran" 
+    )
+
+    display_project(
+        title="Image Search App",
+        description="Made using html, css, and js as my first introduction to API keys this is also one of my favourites. It uses unsplash api-key to search for images in unsplash and return the image to my website. I created it 2 years prior so i have pushed it in github but it's not made public as i didn't have the knowledge of environment variables. ( will try to make it public soon!!!)",
+        image_url="images/search.png", 
+        link="https://github.com/Anonimbus" 
+    )
+    
+    display_project(
+        title="Typing Tutor",
+        description="Are your hands itching to type faster? There's no better place to start your journey to type faster than 'Typing Tutor'. Created with pure C language and in executing in console. A fun journey awaits, where you can experience different game modes: --'Typing practise with short sentences' gives you tongue twisters that will twist even your fingers. --'Typing Drill' helps you conquer your fear of keyboard by giving you the words you find difficult.  --At last 'Typing Game' is made as fun game where you have to type the falling word before it hits the ground panel [ but was unable to complete due to the limitations in the terminal window or my skills! (; ]",
+        image_url="images/c1.png",  
+        # image_url="images/c2.png",
+        link="https://github.com/Anonimbus/Typing-Tutor" 
+    )
+
+
+
+
+
+
+
+
+elif current_page == "Designs":
+
+    st.title("DESIGNS")
+    st.markdown("<h5 style='text-align: center;'>Made using Inkscape, Canva, Photopea & Remove.bg</h3>", unsafe_allow_html=True)
+    st.image("images/Title.png")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.image("images/Black&WhiteLogo.png")
+        st.image("images/Ultimate Dining Room.png")
+            
+    with col2:
+        st.image("images/Canva 100 Design Milestone Badge.png")
+        st.image("images/Hamro Auction.png")
+        st.image("images/newliontype.png")
+    
+    with col3:
+        st.image("images/Downtown Tech.png")
+        st.image("images/WILDLIFE PHOTOGRAPHY TIP #3.png")
+           
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image("images/QATAR.png")
+        st.title("  ")
+        st.image("images/DVisionLogo.png")
+            
+    with col2:
+        st.image("images/Graphic Design.png")
+        st.image("images/Congratulation.png")
+
+    st.image("images/Spoopderman.png")
 
 
 
