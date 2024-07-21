@@ -106,42 +106,9 @@ display_social_links(social_links)
 
 current_page = st.session_state["current_page"]
 
-if current_page == "Designs":
-
-    st.title("DESIGNS")
-    st.markdown("<h5 style='text-align: center;'>Made using Inkscape, Canva, Photopea & Remove.bg</h3>", unsafe_allow_html=True)
-    st.image("images/Title.png")
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.image("images/Black&WhiteLogo.png")
-        st.image("images/Ultimate Dining Room.png")
-            
-    with col2:
-        st.image("images/Canva 100 Design Milestone Badge.png")
-        st.image("images/Hamro Auction.png")
-        st.image("images/newliontype.png")
-    
-    with col3:
-        st.image("images/Downtown Tech.png")
-        st.image("images/WILDLIFE PHOTOGRAPHY TIP #3.png")
-           
-    col1, col2 = st.columns(2)
-    with col1:
-        st.image("images/QATAR.png")
-        st.title("  ")
-        st.image("images/DVisionLogo.png")
-            
-    with col2:
-        st.image("images/Graphic Design.png")
-        st.image("images/Congratulation.png")
-
-    st.image("images/Spoopderman.png")
 
 
-
-
-
-elif current_page == "Home":
+if current_page == "Home":
 
     # st.markdown("<script>window.scrollTo(0, 0);</script>", unsafe_allow_html=True)
     
@@ -259,6 +226,43 @@ elif current_page == "Home":
             st.image("images/newliontype.png")
         with col3:
             st.image("images/WILDLIFE PHOTOGRAPHY TIP #3.png")
+
+
+
+
+
+
+elif current_page == "Designs":
+
+    st.title("DESIGNS")
+    st.markdown("<h5 style='text-align: center;'>Made using Inkscape, Canva, Photopea & Remove.bg</h3>", unsafe_allow_html=True)
+    st.image("images/Title.png")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.image("images/Black&WhiteLogo.png")
+        st.image("images/Ultimate Dining Room.png")
+            
+    with col2:
+        st.image("images/Canva 100 Design Milestone Badge.png")
+        st.image("images/Hamro Auction.png")
+        st.image("images/newliontype.png")
+    
+    with col3:
+        st.image("images/Downtown Tech.png")
+        st.image("images/WILDLIFE PHOTOGRAPHY TIP #3.png")
+           
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image("images/QATAR.png")
+        st.title("  ")
+        st.image("images/DVisionLogo.png")
+            
+    with col2:
+        st.image("images/Graphic Design.png")
+        st.image("images/Congratulation.png")
+
+    st.image("images/Spoopderman.png")
+
 
 
 
