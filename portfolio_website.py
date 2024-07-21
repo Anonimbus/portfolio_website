@@ -335,7 +335,7 @@ elif current_page == "About":
         
 
     with col2:
-        st.image("images/pul.png")
+        st.image("images/pul.PNG")
         st.write("Performing 'Tera Hone Laga Hoon' at our Welcome Program ( 080 BCT ) ")
 
 
