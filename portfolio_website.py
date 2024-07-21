@@ -518,41 +518,41 @@ elif current_page == "Projects":
     st.write("Here are some of my notable projects:")
 
     # Define the path to the image
-    image_path = "images/eCommerce.png"
+    # image_path = "images/eCommerce.png"
 
     # Display the project
     display_project(
         title="DownTown Tech",
         description="Made using Wix in a bootcamp organized by Deerwalk Sifal School, this is an e-Commerce website made to buy and sell goods (mainly tech related).",
-        image_url=image_path,
+        image_url="images/eCommerce.PNG",
         link="https://sigdelswaroop.wixsite.com/my-site"
     )
 
     display_project(
         title="Minds Create",
         description="Made using Wordpress. This website, 'Minds Create' is made as to make an online bidding and painting showcase/selling website.",
-        image_url="images/painting.png",  
+        image_url="images/painting.PNG",  
         link="https://sigdelswaroop.wordpress.com/" 
     )
 
     display_project(
         title="Ed-Sheeran Website",
         description="Made using Wix as my final assignment for the above mentioned bootcamp, this is my personal favourite website for Ed Sheeran songs, which provides smooth sailing and instant loading of songs.",
-        image_url="images/sheeran.png", 
+        image_url="images/sheeran.PNG", 
         link="https://sigdelswaroop.wixsite.com/ed-sheeran" 
     )
 
     display_project(
         title="Image Search App",
         description="Made using html, css, and js as my first introduction to API keys this is also one of my favourites. It uses unsplash api-key to search for images in unsplash and return the image to my website. I created it 2 years prior so i have pushed it in github but it's not made public as i didn't have the knowledge of environment variables. ( will try to make it public soon!!!)",
-        image_url="images/search.png", 
+        image_url="images/search.PNG", 
         link="https://github.com/Anonimbus" 
     )
     
     display_project(
         title="Typing Tutor",
         description="Are your hands itching to type faster? There's no better place to start your journey to type faster than 'Typing Tutor'. Created with pure C language and in executing in console. A fun journey awaits, where you can experience different game modes: --'Typing practise with short sentences' gives you tongue twisters that will twist even your fingers. --'Typing Drill' helps you conquer your fear of keyboard by giving you the words you find difficult.  --At last 'Typing Game' is made as fun game where you have to type the falling word before it hits the ground panel [ but was unable to complete due to the limitations in the terminal window or my skills! (; ]",
-        image_url="images/c1.png",  
+        image_url="images/c1.PNG",  
         # image_url="images/c2.png",
         link="https://github.com/Anonimbus/Typing-Tutor" 
     )
