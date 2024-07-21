@@ -497,22 +497,35 @@ elif current_page == "ChatBot":
 
 elif current_page == "Projects":
         
+    import os
+
+    # Function to display a project
     def display_project(title, description, image_url, link):
         st.subheader(title)
         st.write(description)
-        st.image(image_url, use_column_width=True)
+        
+        # Check if the image file exists
+        if os.path.isfile(image_url):
+            st.image(image_url, use_column_width=True)
+        else:
+            st.warning(f"Image file not found: {image_url}")
+        
         st.markdown(f"[View Project]({link})", unsafe_allow_html=True)
         st.write("---")
-    
 
+    # Main app layout
     st.title("Projects")
     st.write("Here are some of my notable projects:")
 
+    # Define the path to the image
+    image_path = "images/eCommerce.png"
+
+    # Display the project
     display_project(
         title="DownTown Tech",
         description="Made using Wix in a bootcamp organized by Deerwalk Sifal School, this is an e-Commerce website made to buy and sell goods (mainly tech related).",
-        image_url="images/eCommerce.png",  
-        link="https://sigdelswaroop.wixsite.com/my-site" 
+        image_url=image_path,
+        link="https://sigdelswaroop.wixsite.com/my-site"
     )
 
     display_project(
