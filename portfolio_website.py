@@ -247,7 +247,7 @@ elif current_page == "About":
         
 
     with col2:
-        st.image("images/pul.PNG")
+        st.image("images/pulc.PNG")
         st.write("Performing 'Tera Hone Laga Hoon' at our Welcome Program ( 080 BCT ) ")
 
 
@@ -500,10 +500,8 @@ elif current_page == "Projects":
     def display_project(title, description, image_url, link):
         st.subheader(title)
         st.write(description)
-        if image_url:
-            st.image(image_url, use_column_width=True)
-        if link:
-            st.markdown(f"[View Project]({link})", unsafe_allow_html=True)
+        st.image(image_url, use_column_width=True)
+        st.markdown(f"[View Project]({link})", unsafe_allow_html=True)
         st.write("---")
     
 
