@@ -485,7 +485,7 @@ elif current_page == "ChatBot":
         st.session_state.conversation.append({"ai": answer})
         
         # Rerun the script to update the conversation display
-        st.experimental_rerun()
+        st.rerun()
 
 
 
