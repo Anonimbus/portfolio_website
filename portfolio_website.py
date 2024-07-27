@@ -391,6 +391,7 @@ elif current_page == "ChatBot":
 
         .user-question {
             background-color: grey;
+            color: white;
             padding: 10px;
             border-radius: 5px;
             margin-left: 10px;
@@ -411,6 +412,7 @@ elif current_page == "ChatBot":
 
         .ai-answer {
             background-color: black;
+            color: white;
             padding: 10px;
             border-radius: 5px;
             word-wrap: break-word;
